@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,12 @@ DEVICE_PATH := device/xiaomi/dipper
 
 # Kernel
 TARGET_KERNEL_CONFIG := dipper_defconfig
+
+# Partitions
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.qcom
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/dipper/BoardConfigVendor.mk
