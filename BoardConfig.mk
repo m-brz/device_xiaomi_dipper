@@ -22,6 +22,9 @@ DEVICE_PATH := device/xiaomi/dipper
 # Kernel
 TARGET_KERNEL_CONFIG := dipper_defconfig
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
