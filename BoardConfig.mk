@@ -25,6 +25,9 @@ TARGET_KERNEL_CONFIG := dipper_defconfig
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.qcom
 
