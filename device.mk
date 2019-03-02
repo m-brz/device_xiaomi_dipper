@@ -16,6 +16,11 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.brcm.rc \
+    $(LOCAL_PATH)/init.remosaic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.remosaic.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
