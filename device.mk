@@ -66,3 +66,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.soundfx.type=mi
+
+# Display features
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hist.brightness.threshold=5
+
+# Display postprocessing
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=0
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fp.fpc=true \
+    ro.hardware.fp.goodix=true
+
+# GNSS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.flp=brcm \
+    ro.hardware.gps=brcm
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default \
+    ro.se.type=HCE,UICC
