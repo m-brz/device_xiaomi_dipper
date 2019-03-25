@@ -8,3 +8,4 @@ persist.camera.sat.fallback.lux.d=20
 ro.displayfeature.histogram.enable=true
 ro.eyecare.brightness.threshold=3
 ro.eyecare.brightness.level=8
+ro.sf.lcd_density=420
