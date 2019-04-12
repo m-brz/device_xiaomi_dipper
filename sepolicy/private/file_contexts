@@ -1,0 +1,2 @@
+# NFC config
+/system/etc/nfc/libnfc-nxp\.conf u:object_r:vendor_file:s0

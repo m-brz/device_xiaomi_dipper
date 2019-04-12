@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
 
+# Device init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.dipper.rc:system/etc/init/init.dipper.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
@@ -56,4 +60,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:system/etc/nfc/libnfc-nxp.conf
