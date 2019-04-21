@@ -477,7 +477,7 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <!-- True if the display hardware only has brightness buckets rather than a full range of
          backlight values -->
-    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+    <bool name="config_displayBrightnessBucketsInDoze">false</bool>
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">98</integer>
